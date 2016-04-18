@@ -6,7 +6,7 @@
     <ProjectGuid>{BDDD7858-8BC1-4E33-8217-9662B637F776}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MvvmCross.Plugins.iOS</RootNamespace>
+    <RootNamespace>g0rdan.MvvmCross.Plugins.iOS</RootNamespace>
     <AssemblyName>MvvmCross.Plugins.iOS</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
   </PropertyGroup>
