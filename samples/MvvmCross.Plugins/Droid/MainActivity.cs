@@ -2,7 +2,7 @@
 using Android.Widget;
 using Android.OS;
 
-namespace MvvmCross.Plugins.Droid
+namespace g0rdan.MvvmCross.Plugins.Droid
 {
     [Activity (Label = "MvvmCross.Plugins", MainLauncher = true, Icon = "@mipmap/icon")]
     public class MainActivity : Activity
