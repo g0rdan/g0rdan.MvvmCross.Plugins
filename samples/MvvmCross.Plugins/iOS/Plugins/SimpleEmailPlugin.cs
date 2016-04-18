@@ -25,6 +25,9 @@ namespace g0rdan.MvvmCross.Plugins.iOS
 
         void ISimpleEmailPlugin.SendEmail(string toEmail, string subject, string message)
         {
+            if (_vc == null)
+                throw new MissingMethodException("You have to call Init() method before");
+
             if (MFMailComposeViewController.CanSendMail) {
 
                 var to = new string[]{ toEmail };
