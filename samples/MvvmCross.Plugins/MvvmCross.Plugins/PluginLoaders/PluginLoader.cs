@@ -1,9 +1,10 @@
 ﻿using System;
+
 namespace MvvmCross.Plugins
 {
-    public class MyClass
+    public class PluginLoader
     {
-        public MyClass ()
+        public PluginLoader()
         {
         }
     }
