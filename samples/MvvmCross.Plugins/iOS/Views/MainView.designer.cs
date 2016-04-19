@@ -9,19 +9,20 @@ using System;
 using System.CodeDom.Compiler;
 using UIKit;
 
-namespace MvvmCross.Plugins.iOS
+namespace g0rdan.MvvmCross.Plugins.iOS
 {
-	[Register ("ViewController")]
-	partial class ViewController
+	[Register ("MainView")]
+	partial class MainView
 	{
 		[Outlet]
-		UIKit.UIButton Button { get; set; }
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton SendEmailButton { get; set; }
 
 		void ReleaseDesignerOutlets ()
 		{
-			if (Button != null) {
-				Button.Dispose ();
-				Button = null;
+			if (SendEmailButton != null) {
+				SendEmailButton.Dispose ();
+				SendEmailButton = null;
 			}
 		}
 	}

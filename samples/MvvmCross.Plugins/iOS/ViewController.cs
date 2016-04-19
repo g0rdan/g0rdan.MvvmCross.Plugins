@@ -1,6 +1,8 @@
 ﻿using System;
 
 using UIKit;
+using MvvmCross.Platform;
+using g0rdan.MvvmCross.Plugins;
 
 namespace MvvmCross.Plugins.iOS
 {
@@ -24,8 +26,7 @@ namespace MvvmCross.Plugins.iOS
             // Perform any additional setup after loading the view, typically from a nib.
             Button.AccessibilityIdentifier = "myButton";
             Button.TouchUpInside += delegate {
-                var title = string.Format ("{0} clicks!", count++);
-                Button.SetTitle (title, UIControlState.Normal);
+                Mvx.Resolve<ISimpleEmailPlugin>();
             };
         }
 

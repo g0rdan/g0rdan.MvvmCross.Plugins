@@ -1,12 +1,16 @@
 ﻿using Foundation;
 using UIKit;
+using MvvmCross.iOS.Platform;
+using g0rdan.MvvmCross.Plugins.iOS;
+using MvvmCross.Platform;
+using MvvmCross.Core.ViewModels;
 
 namespace MvvmCross.Plugins.iOS
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the
     // User Interface of the application, as well as listening (and optionally responding) to application events from iOS.
     [Register ("AppDelegate")]
-    public class AppDelegate : UIApplicationDelegate
+    public class AppDelegate : MvxApplicationDelegate
     {
         // class-level declarations
 
@@ -21,12 +25,17 @@ namespace MvvmCross.Plugins.iOS
             // If not required for your application you can safely delete this method
 
             // Code to start the Xamarin Test Cloud Agent
-#if ENABLE_TEST_CLOUD
-			Xamarin.Calabash.Start();
-#endif
+            Window = new UIWindow(UIScreen.MainScreen.Bounds);
 
-            return true;
-        }
+            var setup = new Setup(this, Window);
+            setup.Initialize();
+
+            var startup = Mvx.Resolve<IMvxAppStart>();
+            startup.Start();
+
+            Window.MakeKeyAndVisible();
+
+            return true;        }
 
         public override void OnResignActivation (UIApplication application)
         {

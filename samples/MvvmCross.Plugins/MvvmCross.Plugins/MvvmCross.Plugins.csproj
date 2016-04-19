@@ -33,11 +33,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PluginLoaders\PluginLoader.cs" />
     <Compile Include="Plugins\ISimpleEmailPlugin.cs" />
+    <Compile Include="App.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
     <Folder Include="PluginLoaders\" />
     <Folder Include="Plugins\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Platform">
