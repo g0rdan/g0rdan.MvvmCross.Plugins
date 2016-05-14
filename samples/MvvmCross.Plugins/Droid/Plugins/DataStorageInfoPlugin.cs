@@ -1,19 +1,20 @@
-﻿using System;
-using Foundation;
+﻿//using System;
+using Android.OS;
+using Java.IO;
 
-namespace g0rdan.MvvmCross.Plugins.iOS
+namespace g0rdan.MvvmCross.Plugins.Droid
 {
     public class DataStorageInfoPlugin : IDataStorageInfoPlugin
     {
-        ulong _freeSpace;
-        ulong _totalSpace;
+        long _freeSpace;
+        long _totalSpace;
 
         public DataStorageInfoPlugin ()
         {
-            _freeSpace = NSFileManager.DefaultManager.GetFileSystemAttributes (
-                Environment.GetFolderPath (Environment.SpecialFolder.Personal)).FreeSize;
-            _totalSpace = NSFileManager.DefaultManager.GetFileSystemAttributes (
-                Environment.GetFolderPath (Environment.SpecialFolder.Personal)).Size;
+            File path = Environment.DataDirectory;
+            StatFs stat = new StatFs (path.Path);
+            _freeSpace = stat.BlockSizeLong;
+            _totalSpace = stat.AvailableBlocksLong;
         }
 
         public decimal GetFreeSpace (MemorySizeType mSizeType = MemorySizeType.Bytes)
@@ -26,7 +27,7 @@ namespace g0rdan.MvvmCross.Plugins.iOS
             return ConvertTo (_totalSpace, mSizeType);
         }
 
-        private decimal ConvertTo (ulong bytes, MemorySizeType mSizeType = MemorySizeType.Bytes)
+        private decimal ConvertTo (long bytes, MemorySizeType mSizeType = MemorySizeType.Bytes)
         {
             switch (mSizeType) {
             case MemorySizeType.KBytes:

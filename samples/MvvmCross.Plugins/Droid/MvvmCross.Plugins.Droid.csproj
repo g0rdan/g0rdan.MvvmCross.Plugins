@@ -79,6 +79,7 @@
     <Compile Include="Plugins\Plugin.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="DebugTrace.cs" />
+    <Compile Include="Plugins\DataStorageInfoPlugin.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
