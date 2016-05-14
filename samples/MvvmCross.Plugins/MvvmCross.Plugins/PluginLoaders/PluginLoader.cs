@@ -8,6 +8,8 @@ namespace g0rdan.MvvmCross.Plugins
     {
         public static readonly PluginLoader Instance = new PluginLoader();
 
+        private bool _loaded;
+
         public void EnsureLoaded()
         {
             var manager = Mvx.Resolve<IMvxPluginManager>();

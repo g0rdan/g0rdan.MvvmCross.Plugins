@@ -75,6 +75,10 @@
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Plugins\SimpleEmailPlugin.cs" />
+    <Compile Include="SimpleEmailPluginBootstrap.cs" />
+    <Compile Include="Plugins\Plugin.cs" />
+    <Compile Include="Setup.cs" />
+    <Compile Include="DebugTrace.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

@@ -1,11 +1,13 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using MvvmCross.Platform;
+using MvvmCross.Droid.Views;
 
 namespace g0rdan.MvvmCross.Plugins.Droid
 {
     [Activity (Label = "MvvmCross.Plugins", MainLauncher = true, Icon = "@mipmap/icon")]
-    public class MainActivity : Activity
+    public class MainActivity : MvxActivity
     {
         int count = 1;
 
@@ -20,7 +22,16 @@ namespace g0rdan.MvvmCross.Plugins.Droid
             // and attach an event to it
             Button button = FindViewById<Button> (Resource.Id.myButton);
 
-            button.Click += delegate { button.Text = string.Format ("{0} clicks!", count++); };
+            button.Click += (sender, e) => {
+
+                var simpleEmailPlugin = Mvx.Resolve<ISimpleEmailPlugin>();
+                simpleEmailPlugin.Init(this);
+                simpleEmailPlugin.SendEmail(
+                    "gordin.dan@gmail.com",
+                    "Subject",
+                    "Message text"
+                );
+            };
         }
     }
 }
