@@ -9,6 +9,7 @@ namespace g0rdan.MvvmCross.Plugins.iOS
         public void Load()
         {
             Mvx.RegisterSingleton<ISimpleEmailPlugin>(new SimpleEmailPlugin());
+            Mvx.RegisterSingleton<IDataStorageInfoPlugin> (new DataStorageInfoPlugin ());
         }
     } 
 }
