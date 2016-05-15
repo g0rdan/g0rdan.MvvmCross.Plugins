@@ -16,28 +16,36 @@ namespace g0rdan.MvvmCross.Plugins.iOS
                 Environment.GetFolderPath (Environment.SpecialFolder.Personal)).Size;
         }
 
-        public decimal GetFreeSpace (MemorySizeType mSizeType = MemorySizeType.Bytes)
+        public decimal GetFreeSpace (MemorySizeType mSizeType = MemorySizeType.Bytes, int digits = 2)
         {
-            return ConvertTo (_freeSpace, mSizeType);
+            return ConvertTo (_freeSpace, mSizeType, digits);
         }
 
-        public decimal GetTotalSpace (MemorySizeType mSizeType = MemorySizeType.Bytes)
+        public decimal GetTotalSpace (MemorySizeType mSizeType = MemorySizeType.Bytes, int digits = 2)
         {
-            return ConvertTo (_totalSpace, mSizeType);
+            return ConvertTo (_totalSpace, mSizeType, digits);
         }
 
-        private decimal ConvertTo (ulong bytes, MemorySizeType mSizeType = MemorySizeType.Bytes)
+        private decimal ConvertTo (ulong bytes, MemorySizeType mSizeType, int digits)
         {
+            decimal result;
+            decimal divider = 1024;
+
             switch (mSizeType) {
             case MemorySizeType.KBytes:
-                return bytes / 1024;
+                result = bytes / divider;
+                break;
             case MemorySizeType.MBytes:
-                return bytes / 1024 / 1024;
+                result = bytes / divider / divider;
+                break;
             case MemorySizeType.GBytes:
-                return bytes / 1024 / 1024 / 1024;
+                result = bytes / divider / divider / divider;
+                break;
             default:
                 return bytes;
             }
+
+            return Math.Round (result, digits);
         }
     }
 }
