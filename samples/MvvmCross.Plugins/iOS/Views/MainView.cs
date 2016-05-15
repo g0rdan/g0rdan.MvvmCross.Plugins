@@ -18,14 +18,16 @@ namespace g0rdan.MvvmCross.Plugins.iOS
             base.ViewDidLoad();
 
             SendEmailButton.TouchUpInside += (sender, e) => {
-                
-                var simpleEmailPlugin = Mvx.Resolve<ISimpleEmailPlugin>();
-                simpleEmailPlugin.Init(this);
-                simpleEmailPlugin.SendEmail(
-                    "gordin.dan@gmail.com",
-                    "Subject",
-                    "Message text"
-                );
+
+                var free = Mvx.Resolve<IDiskInfoPlugin> ().GetFreeSpace ();
+
+                //var simpleEmailPlugin = Mvx.Resolve<ISimpleEmailPlugin>();
+                //simpleEmailPlugin.Init(this);
+                //simpleEmailPlugin.SendEmail(
+                //    "gordin.dan@gmail.com",
+                //    "Subject",
+                //    "Message text"
+                //);
             };
         }
 
