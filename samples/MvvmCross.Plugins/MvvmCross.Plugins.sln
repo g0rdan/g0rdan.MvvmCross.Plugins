@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.Plugins", "MvvmCr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.Plugins.UITests", "UITests\MvvmCross.Plugins.UITests.csproj", "{A55927F0-745F-4F4A-B867-AD92021690FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.Plugins.Mac", "MvvmCross.Plugins.Mac\MvvmCross.Plugins.Mac.csproj", "{C21536E1-34D4-49BC-A8D1-D2CE3AF96FD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,5 +69,17 @@ Global
 		{A55927F0-745F-4F4A-B867-AD92021690FE}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{A55927F0-745F-4F4A-B867-AD92021690FE}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{A55927F0-745F-4F4A-B867-AD92021690FE}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{C21536E1-34D4-49BC-A8D1-D2CE3AF96FD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C21536E1-34D4-49BC-A8D1-D2CE3AF96FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C21536E1-34D4-49BC-A8D1-D2CE3AF96FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C21536E1-34D4-49BC-A8D1-D2CE3AF96FD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C21536E1-34D4-49BC-A8D1-D2CE3AF96FD5}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{C21536E1-34D4-49BC-A8D1-D2CE3AF96FD5}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{C21536E1-34D4-49BC-A8D1-D2CE3AF96FD5}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{C21536E1-34D4-49BC-A8D1-D2CE3AF96FD5}.Release|iPhone.Build.0 = Release|Any CPU
+		{C21536E1-34D4-49BC-A8D1-D2CE3AF96FD5}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{C21536E1-34D4-49BC-A8D1-D2CE3AF96FD5}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{C21536E1-34D4-49BC-A8D1-D2CE3AF96FD5}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{C21536E1-34D4-49BC-A8D1-D2CE3AF96FD5}.Debug|iPhone.Build.0 = Debug|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -24,13 +24,17 @@ namespace g0rdan.MvvmCross.Plugins.Droid
 
             button.Click += (sender, e) => {
 
-                var simpleEmailPlugin = Mvx.Resolve<ISimpleEmailPlugin>();
-                simpleEmailPlugin.Init(this);
-                simpleEmailPlugin.SendEmail(
-                    "gordin.dan@gmail.com",
-                    "Subject",
-                    "Message text"
-                );
+                var totalSpace = Mvx.Resolve<IDataStorageInfoPlugin> ().GetTotalSpace ();
+                var freeSpace = Mvx.Resolve<IDataStorageInfoPlugin> ().GetFreeSpace ();
+
+
+                //var simpleEmailPlugin = Mvx.Resolve<ISimpleEmailPlugin>();
+                //simpleEmailPlugin.Init(this);
+                //simpleEmailPlugin.SendEmail(
+                //    "gordin.dan@gmail.com",
+                //    "Subject",
+                //    "Message text"
+                //);
             };
         }
     }
