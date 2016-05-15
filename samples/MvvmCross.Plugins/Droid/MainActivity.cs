@@ -24,8 +24,8 @@ namespace g0rdan.MvvmCross.Plugins.Droid
 
             button.Click += (sender, e) => {
 
-                var totalSpace = Mvx.Resolve<IDataStorageInfoPlugin> ().GetTotalSpace ();
-                var freeSpace = Mvx.Resolve<IDataStorageInfoPlugin> ().GetFreeSpace ();
+                var totalSpace = Mvx.Resolve<IDiskInfoPlugin> ().GetTotalSpace ();
+                var freeSpace = Mvx.Resolve<IDiskInfoPlugin> ().GetFreeSpace ();
 
 
                 //var simpleEmailPlugin = Mvx.Resolve<ISimpleEmailPlugin>();

@@ -148,7 +148,7 @@
     </Compile>
     <Compile Include="SimpleEmailPluginBootstrap.cs" />
     <Compile Include="Plugins\Plugin.cs" />
-    <Compile Include="Plugins\DataStorageInfoPlugin.cs" />
+    <Compile Include="Plugins\DiskInfoPlugin.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

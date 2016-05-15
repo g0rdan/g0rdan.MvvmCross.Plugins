@@ -1,21 +1,19 @@
-﻿//using System;
-using System;
-using Android.OS;
-using Java.IO;
+﻿using System;
+using Foundation;
 
-namespace g0rdan.MvvmCross.Plugins.Droid
+namespace g0rdan.MvvmCross.Plugins.iOS
 {
-    public class DataStorageInfoPlugin : IDataStorageInfoPlugin
+    public class DiskInfoPlugin : IDiskInfoPlugin
     {
-        long _freeSpace;
-        long _totalSpace;
+        ulong _freeSpace;
+        ulong _totalSpace;
 
-        public DataStorageInfoPlugin ()
+        public DiskInfoPlugin ()
         {
-            File path = Android.OS.Environment.DataDirectory;
-            StatFs stat = new StatFs (path.Path);
-            _freeSpace = stat.BlockSizeLong;
-            _totalSpace = stat.AvailableBlocksLong;
+            _freeSpace = NSFileManager.DefaultManager.GetFileSystemAttributes (
+                Environment.GetFolderPath (Environment.SpecialFolder.Personal)).FreeSize;
+            _totalSpace = NSFileManager.DefaultManager.GetFileSystemAttributes (
+                Environment.GetFolderPath (Environment.SpecialFolder.Personal)).Size;
         }
 
         public decimal GetFreeSpace (MemorySizeType mSizeType = MemorySizeType.Bytes, int digits = 2)
@@ -28,7 +26,7 @@ namespace g0rdan.MvvmCross.Plugins.Droid
             return ConvertTo (_totalSpace, mSizeType, digits);
         }
 
-        private decimal ConvertTo (long bytes, MemorySizeType mSizeType, int digits)
+        private decimal ConvertTo (ulong bytes, MemorySizeType mSizeType, int digits)
         {
             decimal result;
             decimal divider = 1024;

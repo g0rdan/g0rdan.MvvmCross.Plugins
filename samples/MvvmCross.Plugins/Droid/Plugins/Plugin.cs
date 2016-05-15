@@ -9,7 +9,7 @@ namespace g0rdan.MvvmCross.Plugins.Droid
         public void Load()
         {
             Mvx.RegisterSingleton<ISimpleEmailPlugin>(new SimpleEmailPlugin());
-            Mvx.RegisterSingleton<IDataStorageInfoPlugin> (new DataStorageInfoPlugin ());
+            Mvx.RegisterSingleton<IDiskInfoPlugin> (new DiskInfoPlugin ());
         }
     }
 }
