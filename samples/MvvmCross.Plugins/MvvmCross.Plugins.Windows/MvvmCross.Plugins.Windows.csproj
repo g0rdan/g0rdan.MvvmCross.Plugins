@@ -129,6 +129,12 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MvvmCross.Plugins\MvvmCross.Plugins.csproj">
+      <Project>{8a88927e-0c33-4cf5-8cde-bc16387b7701}</Project>
+      <Name>MvvmCross.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
