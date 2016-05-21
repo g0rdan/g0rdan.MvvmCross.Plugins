@@ -72,11 +72,11 @@
       <Project>{8A88927E-0C33-4CF5-8CDE-BC16387B7701}</Project>
       <Name>MvvmCross.Plugins</Name>
     </ProjectReference>
-    <ProjectReference Include="..\g0rdan.MvvmCross.Plugin.SimpleEmail\g0rdan.MvvmCross.Plugin.SimpleEmail.csproj">
+    <ProjectReference Include="..\..\..\source\Core\g0rdan.MvvmCross.Plugin.SimpleEmail\g0rdan.MvvmCross.Plugin.SimpleEmail.csproj">
       <Project>{B7E76CFF-CDA7-49CA-9A1C-23720F684766}</Project>
       <Name>g0rdan.MvvmCross.Plugin.SimpleEmail</Name>
     </ProjectReference>
-    <ProjectReference Include="..\g0rdan.MvvmCross.Plugin.SimpleEmail\g0rdan.MvvmCross.Plugin.SimpleEmail.Droid\g0rdan.MvvmCross.Plugin.SimpleEmail.Droid.csproj">
+    <ProjectReference Include="..\..\..\source\Droid\g0rdan.MvvmCross.Plugin.SimpleEmail.Droid\g0rdan.MvvmCross.Plugin.SimpleEmail.Droid.csproj">
       <Project>{F161E5E8-ABC4-421A-ACF0-2A5E139F27FC}</Project>
       <Name>g0rdan.MvvmCross.Plugin.SimpleEmail.Droid</Name>
     </ProjectReference>

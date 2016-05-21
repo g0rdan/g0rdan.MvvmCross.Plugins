@@ -13,9 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.Plugins.Mac", "Mv
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{F5D071A5-9645-4E27-856F-7A7B9F57753A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "g0rdan.MvvmCross.Plugin.SimpleEmail", "g0rdan.MvvmCross.Plugin.SimpleEmail\g0rdan.MvvmCross.Plugin.SimpleEmail.csproj", "{B7E76CFF-CDA7-49CA-9A1C-23720F684766}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "g0rdan.MvvmCross.Plugin.SimpleEmail", "..\..\source\Core\g0rdan.MvvmCross.Plugin.SimpleEmail\g0rdan.MvvmCross.Plugin.SimpleEmail.csproj", "{B7E76CFF-CDA7-49CA-9A1C-23720F684766}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "g0rdan.MvvmCross.Plugin.SimpleEmail.Droid", "g0rdan.MvvmCross.Plugin.SimpleEmail\g0rdan.MvvmCross.Plugin.SimpleEmail.Droid\g0rdan.MvvmCross.Plugin.SimpleEmail.Droid.csproj", "{F161E5E8-ABC4-421A-ACF0-2A5E139F27FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "g0rdan.MvvmCross.Plugin.SimpleEmail.Droid", "..\..\source\Droid\g0rdan.MvvmCross.Plugin.SimpleEmail.Droid\g0rdan.MvvmCross.Plugin.SimpleEmail.Droid.csproj", "{F161E5E8-ABC4-421A-ACF0-2A5E139F27FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
