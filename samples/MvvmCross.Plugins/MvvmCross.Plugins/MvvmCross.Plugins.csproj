@@ -31,17 +31,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PluginLoaders\PluginLoader.cs" />
     <Compile Include="Plugins\ISimpleEmailPlugin.cs" />
     <Compile Include="App.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
-    <Compile Include="Plugins\IDataStorageInfoPlugin.cs" />
     <Compile Include="Models\StorageDataModel.cs" />
     <Compile Include="Enums\MemorySizeType.cs" />
+    <Compile Include="Plugins\IDiskInfoPlugin.cs" />
+    <Compile Include="Plugins\PluginLoader.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
-    <Folder Include="PluginLoaders\" />
     <Folder Include="Plugins\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Models\" />
