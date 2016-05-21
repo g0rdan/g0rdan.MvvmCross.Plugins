@@ -13,13 +13,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.Plugins.Mac", "Mv
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{F5D071A5-9645-4E27-856F-7A7B9F57753A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "g0rdan.MvvmCross.Plugin.SimpleEmail", "..\..\source\Core\g0rdan.MvvmCross.Plugin.SimpleEmail\g0rdan.MvvmCross.Plugin.SimpleEmail.csproj", "{B7E76CFF-CDA7-49CA-9A1C-23720F684766}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "g0rdan.MvvmCross.Plugin.SimpleEmail.Droid", "..\..\source\Droid\g0rdan.MvvmCross.Plugin.SimpleEmail.Droid\g0rdan.MvvmCross.Plugin.SimpleEmail.Droid.csproj", "{F161E5E8-ABC4-421A-ACF0-2A5E139F27FC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DiskInfo", "DiskInfo", "{71121A18-BB1D-479E-B172-B51556239A66}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "g0rdan.MvvmCross.Plugin.DiskInfo", "..\..\source\Core\g0rdan.MvvmCross.Plugin.DiskInfo\g0rdan.MvvmCross.Plugin.DiskInfo.csproj", "{FB9DB656-937B-4E40-9BF5-CFB0EFF06FB2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "g0rdan.MvvmCross.Plugin.DiskInfo.Droid", "..\..\source\Droid\g0rdan.MvvmCross.Plugin.DiskInfo.Droid\g0rdan.MvvmCross.Plugin.DiskInfo.Droid.csproj", "{FF40A193-5EF8-409C-BC6A-4E8382173BA7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SimpleEmail", "SimpleEmail", "{EE31CDBA-1385-4D05-8FC7-F87CF5804D5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "g0rdan.MvvmCross.Plugin.SimpleEmail", "..\..\source\Core\g0rdan.MvvmCross.Plugin.SimpleEmail\g0rdan.MvvmCross.Plugin.SimpleEmail.csproj", "{B7E76CFF-CDA7-49CA-9A1C-23720F684766}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "g0rdan.MvvmCross.Plugin.SimpleEmail.Droid", "..\..\source\Droid\g0rdan.MvvmCross.Plugin.SimpleEmail.Droid\g0rdan.MvvmCross.Plugin.SimpleEmail.Droid.csproj", "{F161E5E8-ABC4-421A-ACF0-2A5E139F27FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,9 +145,11 @@ Global
 		{FF40A193-5EF8-409C-BC6A-4E8382173BA7}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{B7E76CFF-CDA7-49CA-9A1C-23720F684766} = {F5D071A5-9645-4E27-856F-7A7B9F57753A}
-		{F161E5E8-ABC4-421A-ACF0-2A5E139F27FC} = {F5D071A5-9645-4E27-856F-7A7B9F57753A}
-		{FB9DB656-937B-4E40-9BF5-CFB0EFF06FB2} = {F5D071A5-9645-4E27-856F-7A7B9F57753A}
-		{FF40A193-5EF8-409C-BC6A-4E8382173BA7} = {F5D071A5-9645-4E27-856F-7A7B9F57753A}
+		{71121A18-BB1D-479E-B172-B51556239A66} = {F5D071A5-9645-4E27-856F-7A7B9F57753A}
+		{EE31CDBA-1385-4D05-8FC7-F87CF5804D5E} = {F5D071A5-9645-4E27-856F-7A7B9F57753A}
+		{FB9DB656-937B-4E40-9BF5-CFB0EFF06FB2} = {71121A18-BB1D-479E-B172-B51556239A66}
+		{FF40A193-5EF8-409C-BC6A-4E8382173BA7} = {71121A18-BB1D-479E-B172-B51556239A66}
+		{B7E76CFF-CDA7-49CA-9A1C-23720F684766} = {EE31CDBA-1385-4D05-8FC7-F87CF5804D5E}
+		{F161E5E8-ABC4-421A-ACF0-2A5E139F27FC} = {EE31CDBA-1385-4D05-8FC7-F87CF5804D5E}
 	EndGlobalSection
 EndGlobal
