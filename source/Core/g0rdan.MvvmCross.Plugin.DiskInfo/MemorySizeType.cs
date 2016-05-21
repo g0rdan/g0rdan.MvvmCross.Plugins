@@ -1,5 +1,5 @@
 ﻿using System;
-namespace g0rdan.MvvmCross.Plugins
+namespace g0rdan.MvvmCross.Plugin.DiskInfo
 {
     public enum MemorySizeType
     {
