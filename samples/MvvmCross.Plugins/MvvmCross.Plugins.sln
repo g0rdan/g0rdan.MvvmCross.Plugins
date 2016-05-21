@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.Plugins.Droid", "Droid\MvvmCross.Plugins.Droid.csproj", "{229FDACD-229F-4BD7-A761-14911BCB9A73}"
@@ -14,6 +14,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{F5D071A5-9645-4E27-856F-7A7B9F57753A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "g0rdan.MvvmCross.Plugin.SimpleEmail", "g0rdan.MvvmCross.Plugin.SimpleEmail\g0rdan.MvvmCross.Plugin.SimpleEmail.csproj", "{B7E76CFF-CDA7-49CA-9A1C-23720F684766}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "g0rdan.MvvmCross.Plugin.SimpleEmail.Droid", "g0rdan.MvvmCross.Plugin.SimpleEmail\g0rdan.MvvmCross.Plugin.SimpleEmail.Droid\g0rdan.MvvmCross.Plugin.SimpleEmail.Droid.csproj", "{F161E5E8-ABC4-421A-ACF0-2A5E139F27FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,8 +99,21 @@ Global
 		{C21536E1-34D4-49BC-A8D1-D2CE3AF96FD5}.Release|iPhone.Build.0 = Release|Any CPU
 		{C21536E1-34D4-49BC-A8D1-D2CE3AF96FD5}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{C21536E1-34D4-49BC-A8D1-D2CE3AF96FD5}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{F161E5E8-ABC4-421A-ACF0-2A5E139F27FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F161E5E8-ABC4-421A-ACF0-2A5E139F27FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F161E5E8-ABC4-421A-ACF0-2A5E139F27FC}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{F161E5E8-ABC4-421A-ACF0-2A5E139F27FC}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{F161E5E8-ABC4-421A-ACF0-2A5E139F27FC}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{F161E5E8-ABC4-421A-ACF0-2A5E139F27FC}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{F161E5E8-ABC4-421A-ACF0-2A5E139F27FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F161E5E8-ABC4-421A-ACF0-2A5E139F27FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F161E5E8-ABC4-421A-ACF0-2A5E139F27FC}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{F161E5E8-ABC4-421A-ACF0-2A5E139F27FC}.Release|iPhone.Build.0 = Release|Any CPU
+		{F161E5E8-ABC4-421A-ACF0-2A5E139F27FC}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{F161E5E8-ABC4-421A-ACF0-2A5E139F27FC}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B7E76CFF-CDA7-49CA-9A1C-23720F684766} = {F5D071A5-9645-4E27-856F-7A7B9F57753A}
+		{F161E5E8-ABC4-421A-ACF0-2A5E139F27FC} = {F5D071A5-9645-4E27-856F-7A7B9F57753A}
 	EndGlobalSection
 EndGlobal

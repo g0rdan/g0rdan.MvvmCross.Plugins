@@ -2,7 +2,7 @@
 using MvvmCross.Platform.Plugins;
 using MvvmCross.Platform;
 
-namespace g0rdan.MvvmCross.Plugins
+namespace g0rdan.MvvmCross.Plugin.SimpleEmail
 {
     public class PluginLoader : IMvxPluginLoader
     {
