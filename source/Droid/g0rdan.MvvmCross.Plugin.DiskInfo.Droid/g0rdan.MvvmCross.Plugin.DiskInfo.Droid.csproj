@@ -41,19 +41,19 @@
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
     <Reference Include="MvvmCross.Platform.Droid">
-      <HintPath>..\..\samples\MvvmCross.Plugins\packages\MvvmCross.Platform.4.1.5\lib\MonoAndroid\MvvmCross.Platform.Droid.dll</HintPath>
+      <HintPath>..\..\..\samples\MvvmCross.Plugins\packages\MvvmCross.Platform.4.1.5\lib\MonoAndroid\MvvmCross.Platform.Droid.dll</HintPath>
     </Reference>
     <Reference Include="MvvmCross.Platform">
-      <HintPath>..\..\samples\MvvmCross.Plugins\packages\MvvmCross.Platform.4.1.5\lib\MonoAndroid\MvvmCross.Platform.dll</HintPath>
+      <HintPath>..\..\..\samples\MvvmCross.Plugins\packages\MvvmCross.Platform.4.1.5\lib\MonoAndroid\MvvmCross.Platform.dll</HintPath>
     </Reference>
     <Reference Include="MvvmCross.Droid">
-      <HintPath>..\..\samples\MvvmCross.Plugins\packages\MvvmCross.Core.4.1.5\lib\MonoAndroid\MvvmCross.Droid.dll</HintPath>
+      <HintPath>..\..\..\samples\MvvmCross.Plugins\packages\MvvmCross.Core.4.1.5\lib\MonoAndroid\MvvmCross.Droid.dll</HintPath>
     </Reference>
     <Reference Include="MvvmCross.Droid.Shared">
-      <HintPath>..\..\samples\MvvmCross.Plugins\packages\MvvmCross.Core.4.1.5\lib\MonoAndroid\MvvmCross.Droid.Shared.dll</HintPath>
+      <HintPath>..\..\..\samples\MvvmCross.Plugins\packages\MvvmCross.Core.4.1.5\lib\MonoAndroid\MvvmCross.Droid.Shared.dll</HintPath>
     </Reference>
     <Reference Include="MvvmCross.Core">
-      <HintPath>..\..\samples\MvvmCross.Plugins\packages\MvvmCross.Core.4.1.5\lib\MonoAndroid\MvvmCross.Core.dll</HintPath>
+      <HintPath>..\..\..\samples\MvvmCross.Plugins\packages\MvvmCross.Core.4.1.5\lib\MonoAndroid\MvvmCross.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -71,7 +71,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Core\g0rdan.MvvmCross.Plugin.DiskInfo\g0rdan.MvvmCross.Plugin.DiskInfo.csproj">
+    <ProjectReference Include="..\..\Core\g0rdan.MvvmCross.Plugin.DiskInfo\g0rdan.MvvmCross.Plugin.DiskInfo.csproj">
       <Project>{FB9DB656-937B-4E40-9BF5-CFB0EFF06FB2}</Project>
       <Name>g0rdan.MvvmCross.Plugin.DiskInfo</Name>
     </ProjectReference>

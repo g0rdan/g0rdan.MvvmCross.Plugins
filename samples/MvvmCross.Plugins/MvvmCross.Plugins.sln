@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "g0rdan.MvvmCross.Plugin.Sim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "g0rdan.MvvmCross.Plugin.DiskInfo", "..\..\source\Core\g0rdan.MvvmCross.Plugin.DiskInfo\g0rdan.MvvmCross.Plugin.DiskInfo.csproj", "{FB9DB656-937B-4E40-9BF5-CFB0EFF06FB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "g0rdan.MvvmCross.Plugin.DiskInfo.Droid", "..\..\source\g0rdan.MvvmCross.Plugin.DiskInfo.Droid\g0rdan.MvvmCross.Plugin.DiskInfo.Droid.csproj", "{FF40A193-5EF8-409C-BC6A-4E8382173BA7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "g0rdan.MvvmCross.Plugin.DiskInfo.Droid", "..\..\source\Droid\g0rdan.MvvmCross.Plugin.DiskInfo.Droid\g0rdan.MvvmCross.Plugin.DiskInfo.Droid.csproj", "{FF40A193-5EF8-409C-BC6A-4E8382173BA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
