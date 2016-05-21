@@ -3,6 +3,8 @@
 using UIKit;
 using MvvmCross.iOS.Views;
 using MvvmCross.Platform;
+using g0rdan.MvvmCross.Plugin.DiskInfo;
+using g0rdan.MvvmCross.Plugin.SimpleEmail;
 
 namespace g0rdan.MvvmCross.Plugins.iOS
 {
@@ -19,15 +21,15 @@ namespace g0rdan.MvvmCross.Plugins.iOS
 
             SendEmailButton.TouchUpInside += (sender, e) => {
 
-                var free = Mvx.Resolve<IDiskInfoPlugin> ().GetFreeSpace ();
+//                var free = Mvx.Resolve<IDiskInfoPlugin> ().GetFreeSpace ();
 
-                //var simpleEmailPlugin = Mvx.Resolve<ISimpleEmailPlugin>();
-                //simpleEmailPlugin.Init(this);
-                //simpleEmailPlugin.SendEmail(
-                //    "gordin.dan@gmail.com",
-                //    "Subject",
-                //    "Message text"
-                //);
+                var simpleEmailPlugin = Mvx.Resolve<ISimpleEmailPlugin>();
+                simpleEmailPlugin.Init(this);
+                simpleEmailPlugin.SendEmail(
+                    "gordin.dan@gmail.com",
+                    "Subject",
+                    "Message text"
+                );
             };
         }
 

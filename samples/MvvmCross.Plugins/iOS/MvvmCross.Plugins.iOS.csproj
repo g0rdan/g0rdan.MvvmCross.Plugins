@@ -113,6 +113,22 @@
       <Project>{8A88927E-0C33-4CF5-8CDE-BC16387B7701}</Project>
       <Name>MvvmCross.Plugins</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\source\Core\g0rdan.MvvmCross.Plugin.DiskInfo\g0rdan.MvvmCross.Plugin.DiskInfo.csproj">
+      <Project>{FB9DB656-937B-4E40-9BF5-CFB0EFF06FB2}</Project>
+      <Name>g0rdan.MvvmCross.Plugin.DiskInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\source\iOS\g0rdan.MvvmCross.Plugin.DiskInfo.iOS\g0rdan.MvvmCross.Plugin.DiskInfo.iOS.csproj">
+      <Project>{BAF5D912-7ADA-4BB5-B558-7A551A5CFD9B}</Project>
+      <Name>g0rdan.MvvmCross.Plugin.DiskInfo.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\source\Core\g0rdan.MvvmCross.Plugin.SimpleEmail\g0rdan.MvvmCross.Plugin.SimpleEmail.csproj">
+      <Project>{B7E76CFF-CDA7-49CA-9A1C-23720F684766}</Project>
+      <Name>g0rdan.MvvmCross.Plugin.SimpleEmail</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\source\iOS\g0rdan.MvvmCross.Plugin.SimpleEmail.iOS\g0rdan.MvvmCross.Plugin.SimpleEmail.iOS.csproj">
+      <Project>{EDA05063-8939-4919-8AD8-4A489A26806F}</Project>
+      <Name>g0rdan.MvvmCross.Plugin.SimpleEmail.iOS</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Contents.json">
@@ -124,7 +140,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
-    <Folder Include="Plugins\" />
     <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
@@ -144,15 +159,13 @@
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="Plugins\SimpleEmailPlugin.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="Views\MainView.cs" />
     <Compile Include="Views\MainView.designer.cs">
       <DependentUpon>MainView.cs</DependentUpon>
     </Compile>
     <Compile Include="SimpleEmailPluginBootstrap.cs" />
-    <Compile Include="Plugins\Plugin.cs" />
-    <Compile Include="Plugins\DiskInfoPlugin.cs" />
+    <Compile Include="DiskInfoPluginBootstrap.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

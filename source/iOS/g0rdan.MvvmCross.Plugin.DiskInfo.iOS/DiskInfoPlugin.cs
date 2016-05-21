@@ -1,7 +1,7 @@
 ﻿using System;
 using Foundation;
 
-namespace g0rdan.MvvmCross.Plugins.iOS
+namespace g0rdan.MvvmCross.Plugin.DiskInfo.iOS
 {
     public class DiskInfoPlugin : IDiskInfoPlugin
     {

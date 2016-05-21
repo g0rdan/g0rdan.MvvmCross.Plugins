@@ -2,7 +2,7 @@
 using MessageUI;
 using UIKit;
 
-namespace g0rdan.MvvmCross.Plugins.iOS
+namespace g0rdan.MvvmCross.Plugin.SimpleEmail.iOS
 {
     public class SimpleEmailPlugin : ISimpleEmailPlugin
     {

@@ -2,15 +2,14 @@
 using MvvmCross.Platform.Plugins;
 using MvvmCross.Platform;
 
-namespace g0rdan.MvvmCross.Plugins.iOS
+namespace g0rdan.MvvmCross.Plugin.SimpleEmail.iOS
 {
     public class Plugin : IMvxPlugin
     {
         public void Load()
         {
             Mvx.RegisterSingleton<ISimpleEmailPlugin>(new SimpleEmailPlugin());
-            Mvx.RegisterSingleton<IDiskInfoPlugin> (new DiskInfoPlugin ());
         }
-    } 
+    }
 }
 

@@ -3,6 +3,7 @@
 using UIKit;
 using MvvmCross.Platform;
 using g0rdan.MvvmCross.Plugins;
+using g0rdan.MvvmCross.Plugin.SimpleEmail;
 
 namespace MvvmCross.Plugins.iOS
 {
