@@ -1,9 +1,9 @@
-﻿//using System;
-using System;
+﻿using System;
 using Android.OS;
 using Java.IO;
+using g0rdan.MvvmCross.Plugin.DiskInfo;
 
-namespace g0rdan.MvvmCross.Plugins.Droid
+namespace g0rdan.MvvmCross.Plugin.DiskInfo.Droid
 {
     public class DiskInfoPlugin : IDiskInfoPlugin
     {

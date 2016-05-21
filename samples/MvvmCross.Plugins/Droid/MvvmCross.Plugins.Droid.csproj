@@ -80,6 +80,14 @@
       <Project>{F161E5E8-ABC4-421A-ACF0-2A5E139F27FC}</Project>
       <Name>g0rdan.MvvmCross.Plugin.SimpleEmail.Droid</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\source\Core\g0rdan.MvvmCross.Plugin.DiskInfo\g0rdan.MvvmCross.Plugin.DiskInfo.csproj">
+      <Project>{FB9DB656-937B-4E40-9BF5-CFB0EFF06FB2}</Project>
+      <Name>g0rdan.MvvmCross.Plugin.DiskInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\source\g0rdan.MvvmCross.Plugin.DiskInfo.Droid\g0rdan.MvvmCross.Plugin.DiskInfo.Droid.csproj">
+      <Project>{FF40A193-5EF8-409C-BC6A-4E8382173BA7}</Project>
+      <Name>g0rdan.MvvmCross.Plugin.DiskInfo.Droid</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -88,7 +96,7 @@
     <Compile Include="SimpleEmailPluginBootstrap.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="DebugTrace.cs" />
-    <Compile Include="Plugins\DiskInfoPlugin.cs" />
+    <Compile Include="DiskInfoPluginBootstrap.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -106,7 +114,4 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
-  <ItemGroup>
-    <Folder Include="Plugins\" />
-  </ItemGroup>
 </Project>

@@ -48,6 +48,7 @@ namespace g0rdan.MvvmCross.Plugins.Droid
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::g0rdan.MvvmCross.Plugins.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::g0rdan.MvvmCross.Plugins.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
 			global::g0rdan.MvvmCross.Plugin.SimpleEmail.Droid.Resource.String.library_name = global::g0rdan.MvvmCross.Plugins.Droid.Resource.String.library_name;
+			global::g0rdan.MvvmCross.Plugin.DiskInfo.Droid.Resource.String.library_name = global::g0rdan.MvvmCross.Plugins.Droid.Resource.String.library_name;
 		}
 		
 		public partial class Attribute
