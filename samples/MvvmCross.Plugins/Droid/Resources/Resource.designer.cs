@@ -47,6 +47,7 @@ namespace g0rdan.MvvmCross.Plugins.Droid
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView = global::g0rdan.MvvmCross.Plugins.Droid.Resource.Styleable.MvxListView;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::g0rdan.MvvmCross.Plugins.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::g0rdan.MvvmCross.Plugins.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
+			global::g0rdan.MvvmCross.Plugin.SimpleEmail.Droid.Resource.String.library_name = global::g0rdan.MvvmCross.Plugins.Droid.Resource.String.library_name;
 		}
 		
 		public partial class Attribute
@@ -86,14 +87,14 @@ namespace g0rdan.MvvmCross.Plugins.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f040000
-			public const int MvvmCrossTagId = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int MvvmCrossTagId = 2131034112;
 			
-			// aapt resource value: 0x7f040001
-			public const int MvxBindingTagUnique = 2130968577;
+			// aapt resource value: 0x7f050001
+			public const int MvxBindingTagUnique = 2131034113;
 			
-			// aapt resource value: 0x7f040002
-			public const int myButton = 2130968578;
+			// aapt resource value: 0x7f050002
+			public const int myButton = 2131034114;
 			
 			static Id()
 			{
@@ -140,11 +141,14 @@ namespace g0rdan.MvvmCross.Plugins.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int app_name = 2131034113;
+			// aapt resource value: 0x7f040002
+			public const int app_name = 2130968578;
 			
-			// aapt resource value: 0x7f050000
-			public const int hello = 2131034112;
+			// aapt resource value: 0x7f040001
+			public const int hello = 2130968577;
+			
+			// aapt resource value: 0x7f040000
+			public const int library_name = 2130968576;
 			
 			static String()
 			{

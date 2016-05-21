@@ -3,6 +3,7 @@ using Android.Widget;
 using Android.OS;
 using MvvmCross.Platform;
 using MvvmCross.Droid.Views;
+using g0rdan.MvvmCross.Plugin.SimpleEmail;
 
 namespace g0rdan.MvvmCross.Plugins.Droid
 {
@@ -24,17 +25,17 @@ namespace g0rdan.MvvmCross.Plugins.Droid
 
             button.Click += (sender, e) => {
 
-                var totalSpace = Mvx.Resolve<IDiskInfoPlugin> ().GetTotalSpace ();
-                var freeSpace = Mvx.Resolve<IDiskInfoPlugin> ().GetFreeSpace ();
+//                var totalSpace = Mvx.Resolve<IDiskInfoPlugin> ().GetTotalSpace ();
+//                var freeSpace = Mvx.Resolve<IDiskInfoPlugin> ().GetFreeSpace ();
 
 
-                //var simpleEmailPlugin = Mvx.Resolve<ISimpleEmailPlugin>();
-                //simpleEmailPlugin.Init(this);
-                //simpleEmailPlugin.SendEmail(
-                //    "gordin.dan@gmail.com",
-                //    "Subject",
-                //    "Message text"
-                //);
+                var simpleEmailPlugin = Mvx.Resolve<ISimpleEmailPlugin>();
+                simpleEmailPlugin.Init(this);
+                simpleEmailPlugin.SendEmail(
+                    "gordin.dan@gmail.com",
+                    "Subject",
+                    "Message text"
+                );
             };
         }
     }
