@@ -16,12 +16,12 @@ namespace g0rdan.MvvmCross.Plugin.DiskInfo.iOS
                 Environment.GetFolderPath (Environment.SpecialFolder.Personal)).Size;
         }
 
-        public decimal GetFreeSpace (MemorySizeType mSizeType = MemorySizeType.Bytes, int digits = 2)
+        public decimal GetFreeSpace (DeviceType deviceType = DeviceType.Inner, MemorySizeType mSizeType = MemorySizeType.Bytes, int digits = 2)
         {
             return ConvertTo (_freeSpace, mSizeType, digits);
         }
 
-        public decimal GetTotalSpace (MemorySizeType mSizeType = MemorySizeType.Bytes, int digits = 2)
+        public decimal GetTotalSpace (DeviceType deviceType = DeviceType.Inner, MemorySizeType mSizeType = MemorySizeType.Bytes, int digits = 2)
         {
             return ConvertTo (_totalSpace, mSizeType, digits);
         }
