@@ -33,7 +33,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PluginLoader.cs" />
     <Compile Include="IDiskInfoPlugin.cs" />
-    <Compile Include="MemorySizeType.cs" />
+    <Compile Include="Enums\MemorySizeType.cs" />
+    <Compile Include="Enums\DeviceType.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
@@ -52,5 +53,8 @@
       <Project>{8A88927E-0C33-4CF5-8CDE-BC16387B7701}</Project>
       <Name>MvvmCross.Plugins</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Enums\" />
   </ItemGroup>
 </Project>

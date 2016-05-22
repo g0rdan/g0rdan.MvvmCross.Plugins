@@ -10,22 +10,33 @@ namespace g0rdan.MvvmCross.Plugin.DiskInfo.Droid
         long _freeSpace;
         long _totalSpace;
 
-        public DiskInfoPlugin ()
+        public decimal GetFreeSpace (DeviceType deviceType = DeviceType.Inner, MemorySizeType mSizeType = MemorySizeType.Bytes, int digits = 2)
         {
-            File path = Android.OS.Environment.DataDirectory;
-            StatFs stat = new StatFs (path.Path);
-            _freeSpace = stat.BlockSizeLong;
-            _totalSpace = stat.AvailableBlocksLong;
-        }
+            string path = deviceType == DeviceType.Inner ? 
+                Android.OS.Environment.DataDirectory.Path : 
+                Android.OS.Environment.ExternalStorageDirectory.Path;
+            
+            GetSizes(path);
 
-        public decimal GetFreeSpace (MemorySizeType mSizeType = MemorySizeType.Bytes, int digits = 2)
-        {
             return ConvertTo (_freeSpace, mSizeType, digits);
         }
 
-        public decimal GetTotalSpace (MemorySizeType mSizeType = MemorySizeType.Bytes, int digits = 2)
+        public decimal GetTotalSpace (DeviceType deviceType = DeviceType.Inner, MemorySizeType mSizeType = MemorySizeType.Bytes, int digits = 2)
         {
+            string path = deviceType == DeviceType.Inner ? 
+                Android.OS.Environment.DataDirectory.Path : 
+                Android.OS.Environment.ExternalStorageDirectory.Path;
+
+            GetSizes(path);
+
             return ConvertTo (_totalSpace, mSizeType, digits);
+        }
+
+        private void GetSizes(string path)
+        {
+            StatFs stat = new StatFs (path);
+            _freeSpace = stat.BlockSizeLong;
+            _totalSpace = stat.AvailableBlocksLong;
         }
 
         private decimal ConvertTo (long bytes, MemorySizeType mSizeType, int digits)
