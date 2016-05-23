@@ -18,11 +18,17 @@ namespace g0rdan.MvvmCross.Plugin.DiskInfo.iOS
 
         public decimal GetFreeSpace (DeviceType deviceType = DeviceType.Inner, MemorySizeType mSizeType = MemorySizeType.Bytes, int digits = 2)
         {
+            if (deviceType != DeviceType.Inner)
+                return 0;
+
             return ConvertTo (_freeSpace, mSizeType, digits);
         }
 
         public decimal GetTotalSpace (DeviceType deviceType = DeviceType.Inner, MemorySizeType mSizeType = MemorySizeType.Bytes, int digits = 2)
         {
+            if (deviceType != DeviceType.Inner)
+                return 0;
+            
             return ConvertTo (_totalSpace, mSizeType, digits);
         }
 
