@@ -101,7 +101,11 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setup.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -128,8 +132,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="MainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\source\Core\g0rdan.MvvmCross.Plugin.DiskInfo\g0rdan.MvvmCross.Plugin.DiskInfo.csproj">
+      <Project>{fb9db656-937b-4e40-9bf5-cfb0eff06fb2}</Project>
+      <Name>g0rdan.MvvmCross.Plugin.DiskInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\source\Windows\DiskInfo\g0rdan.MvvmCross.Plugin.DiskInfo.WindowsCommon\g0rdan.MvvmCross.Plugin.DiskInfo.WindowsCommon.csproj">
+      <Project>{3f2eca79-1e5d-4dbb-99eb-b1a82bde69f5}</Project>
+      <Name>g0rdan.MvvmCross.Plugin.DiskInfo.WindowsCommon</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MvvmCross.Plugins\MvvmCross.Plugins.csproj">
       <Project>{8a88927e-0c33-4cf5-8cde-bc16387b7701}</Project>
       <Name>MvvmCross.Plugins</Name>

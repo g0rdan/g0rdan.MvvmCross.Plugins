@@ -8,6 +8,11 @@ namespace g0rdan.MvvmCross.Plugins.ViewModels
         public MainViewModel()
         {
         }
+
+        public override void Start()
+        {
+            base.Start();
+        }
     }
 }
 
