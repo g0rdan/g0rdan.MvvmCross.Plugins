@@ -2,8 +2,8 @@
 <package >
   <metadata>
     <id>$id$</id>
-    <version>1.0.1</version>
-    <title>$title$</title>
+    <version>1.0.2</version>
+    <title>MvvmCross DiskInfo Plugin</title>
     <authors>Denis Gordin</authors>
     <owners>$author$</owners>
     <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
