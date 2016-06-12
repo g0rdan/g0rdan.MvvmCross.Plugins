@@ -2,8 +2,8 @@
 <package >
   <metadata>
     <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
+    <version>1.0.6</version>
+    <title>MvvmCross DiskInfo Plugin (PCL)</title>
     <authors>Denis Gordin</authors>
     <owners>$author$</owners>
     <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
@@ -15,9 +15,9 @@
     <copyright>Denis Gordin 2016</copyright>
     <tags>MvvmCross Mvvm</tags>
     <dependencies>
-      <dependency id="MvvmCross.Core" version="4.1.5" />
-      <dependency id="MvvmCross.Platform" version="4.1.5" />
-      <dependency id="MvvmCross.Plugins" version="4.1.5" />
+      <dependency id="MvvmCross.Core" version="4.1.6" />
+      <dependency id="MvvmCross.Platform" version="4.1.6" />
+      <dependency id="MvvmCross.Plugins" version="4.1.6" />
     </dependencies>
   </metadata>
 </package>
