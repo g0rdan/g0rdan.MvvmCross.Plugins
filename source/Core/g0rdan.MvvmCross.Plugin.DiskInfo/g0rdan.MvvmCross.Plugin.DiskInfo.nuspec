@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>$id$</id>
-    <version>1.0.6</version>
+    <version>1.0.7</version>
     <title>MvvmCross DiskInfo Plugin (PCL)</title>
     <authors>Denis Gordin</authors>
     <owners>$author$</owners>
@@ -13,11 +13,9 @@
     <description>MvvmCross plugin for getting information about device storage</description>
     <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
     <copyright>Denis Gordin 2016</copyright>
-    <tags>MvvmCross Mvvm</tags>
+    <tags>MvvmCross Mvvm DiskInfo</tags>
     <dependencies>
-      <dependency id="MvvmCross.Core" version="4.1.6" />
-      <dependency id="MvvmCross.Platform" version="4.1.6" />
-      <dependency id="MvvmCross.Plugins" version="4.1.6" />
+      <dependency id="MvvmCross" version="4.2.0" />
     </dependencies>
   </metadata>
 </package>
