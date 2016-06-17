@@ -3,7 +3,7 @@
   <metadata>
     <id>$id$</id>
     <version>1.0.0</version>
-    <title>MvvmCross Plugin SimpleEmail (PCL)</title>
+    <title>MvvmCross Plugin SimpleEmail (iOS)</title>
     <authors>Denis Gordin</authors>
     <owners>$author$</owners>
     <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
@@ -13,9 +13,10 @@
     <description>Plugin for simple creating and sending emails</description>
     <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
     <copyright>Copyright 2016</copyright>
-    <tags>MvvmCross Xamarin PCL Email</tags>
+    <tags>MvvmCross Xamarin Email iOS</tags>
     <dependencies>
       <dependency id="MvvmCross" version="4.2.0" />
+      <dependency id="g0rdan.MvvmCross.Plugin.SimpleEmail" version="1.0.0" />
     </dependencies>
   </metadata>
 </package>
