@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="hello">Send Email</string>
+	<string name="send_email">Send Email</string>
+	<string name="disk_info">Show disk info</string>
 	<string name="app_name">MvvmCross.Plugins.Droid</string>
 </resources>
