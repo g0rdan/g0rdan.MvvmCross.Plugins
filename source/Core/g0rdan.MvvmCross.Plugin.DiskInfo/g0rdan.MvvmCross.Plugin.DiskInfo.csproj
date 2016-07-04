@@ -39,14 +39,11 @@
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
     <Reference Include="MvvmCross.Platform">
-      <HintPath>..\..\..\samples\MvvmCross.Plugins\packages\MvvmCross.Platform.4.1.5\lib\portable-net45+win+wpa81+wp80\MvvmCross.Platform.dll</HintPath>
+      <HintPath>..\..\..\samples\MvvmCross.Plugins\packages\MvvmCross.Platform.4.2.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Platform.dll</HintPath>
     </Reference>
     <Reference Include="MvvmCross.Core">
-      <HintPath>..\..\..\samples\MvvmCross.Plugins\packages\MvvmCross.Core.4.1.5\lib\portable-net45+win+wpa81+wp80\MvvmCross.Core.dll</HintPath>
+      <HintPath>..\..\..\samples\MvvmCross.Plugins\packages\MvvmCross.Core.4.2.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Core.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\samples\MvvmCross.Plugins\MvvmCross.Plugins\MvvmCross.Plugins.csproj">
@@ -56,5 +53,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Enums\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
