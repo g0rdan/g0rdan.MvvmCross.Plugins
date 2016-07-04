@@ -11,19 +11,28 @@ using UIKit;
 
 namespace g0rdan.MvvmCross.Plugins.iOS
 {
-	[Register ("MainView")]
-	partial class MainView
-	{
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UIButton SendEmailButton { get; set; }
+    [Register ("MainView")]
+    partial class MainView
+    {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton DiskInfoButton { get; set; }
 
-		void ReleaseDesignerOutlets ()
-		{
-			if (SendEmailButton != null) {
-				SendEmailButton.Dispose ();
-				SendEmailButton = null;
-			}
-		}
-	}
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton SendEmailButton { get; set; }
+
+        void ReleaseDesignerOutlets ()
+        {
+            if (DiskInfoButton != null) {
+                DiskInfoButton.Dispose ();
+                DiskInfoButton = null;
+            }
+
+            if (SendEmailButton != null) {
+                SendEmailButton.Dispose ();
+                SendEmailButton = null;
+            }
+        }
+    }
 }
