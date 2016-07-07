@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>g0rdan.MvvmCross.Plugin.DiskInfo</RootNamespace>
     <AssemblyName>g0rdan.MvvmCross.Plugin.DiskInfo</AssemblyName>
-    <TargetFrameworkProfile>Profile78</TargetFrameworkProfile>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

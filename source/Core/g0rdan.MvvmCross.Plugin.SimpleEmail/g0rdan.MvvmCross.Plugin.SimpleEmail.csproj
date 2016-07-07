@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>g0rdan.MvvmCross.Plugin.SimpleEmail</RootNamespace>
     <AssemblyName>g0rdan.MvvmCross.Plugin.SimpleEmail</AssemblyName>
-    <TargetFrameworkProfile>Profile78</TargetFrameworkProfile>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <ReleaseVersion>1.0.0</ReleaseVersion>
     <SynchReleaseVersion>false</SynchReleaseVersion>
