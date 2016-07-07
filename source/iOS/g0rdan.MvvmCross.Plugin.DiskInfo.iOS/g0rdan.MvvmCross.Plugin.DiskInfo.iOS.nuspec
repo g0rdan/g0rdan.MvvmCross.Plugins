@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>$id$</id>
-    <version>1.0.7</version>
+    <version>1.0.8</version>
     <title>MvvmCross DiskInfo Plugin</title>
     <authors>Denis Gordin</authors>
     <owners>$author$</owners>
@@ -15,8 +15,8 @@
     <copyright>Denis Gordin 2016</copyright>
     <tags>MvvmCross Mvvm</tags>
     <dependencies>
-      <dependency id="g0rdan.MvvmCross.Plugin.DiskInfo" version="1.0.7" />
-      <dependency id="MvvmCross" version="4.2.0" />
+      <dependency id="g0rdan.MvvmCross.Plugin.DiskInfo" version="1.0.8" />
+      <dependency id="MvvmCross" version="4.2.1" />
     </dependencies>
   </metadata>
 </package>

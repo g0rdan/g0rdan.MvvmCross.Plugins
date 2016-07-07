@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>$id$</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>MvvmCross Plugin SimpleEmail (PCL)</title>
     <authors>Denis Gordin</authors>
     <owners>$author$</owners>
@@ -15,7 +15,7 @@
     <copyright>Copyright 2016</copyright>
     <tags>MvvmCross Xamarin PCL Email</tags>
     <dependencies>
-      <dependency id="MvvmCross" version="4.2.0" />
+      <dependency id="MvvmCross" version="4.2.1" />
     </dependencies>
   </metadata>
 </package>
