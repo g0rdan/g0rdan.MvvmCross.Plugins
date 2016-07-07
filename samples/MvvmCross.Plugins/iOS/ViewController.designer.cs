@@ -11,18 +11,18 @@ using UIKit;
 
 namespace MvvmCross.Plugins.iOS
 {
-	[Register ("ViewController")]
-	partial class ViewController
-	{
-		[Outlet]
-		UIKit.UIButton Button { get; set; }
+    [Register ("ViewController")]
+    partial class ViewController
+    {
+        [Outlet]
+        UIKit.UIButton Button { get; set; }
 
-		void ReleaseDesignerOutlets ()
-		{
-			if (Button != null) {
-				Button.Dispose ();
-				Button = null;
-			}
-		}
-	}
+        void ReleaseDesignerOutlets ()
+        {
+            if (Button != null) {
+                Button.Dispose ();
+                Button = null;
+            }
+        }
+    }
 }

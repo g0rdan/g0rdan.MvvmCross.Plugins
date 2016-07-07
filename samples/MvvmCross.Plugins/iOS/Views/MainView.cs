@@ -19,19 +19,33 @@ namespace g0rdan.MvvmCross.Plugins.iOS
         {
             base.ViewDidLoad();
 
-            SendEmailButton.TouchUpInside += (sender, e) => {
+            SendEmailButton.TouchUpInside += SendEmailButton_TouchUpInside;
+            DiskInfoButton.TouchUpInside += DiskInfoButton_TouchUpInside;
+        }
 
-                var freeInner = Mvx.Resolve<IDiskInfoPlugin> ().GetFreeSpace (DeviceType.Inner);
-                var freeSD = Mvx.Resolve<IDiskInfoPlugin> ().GetFreeSpace (DeviceType.SD);
+        void SendEmailButton_TouchUpInside (object sender, EventArgs e)
+        {
+            var simpleEmailPlugin = Mvx.Resolve<ISimpleEmailPlugin> ();
+            simpleEmailPlugin.Init (this);
+            simpleEmailPlugin.SendEmail (
+                "gordin.dan@gmail.com",
+                "Subject",
+                "Message text"
+            );
+        }
 
-//                var simpleEmailPlugin = Mvx.Resolve<ISimpleEmailPlugin>();
-//                simpleEmailPlugin.Init(this);
-//                simpleEmailPlugin.SendEmail(
-//                    "gordin.dan@gmail.com",
-//                    "Subject",
-//                    "Message text"
-//                );
-            };
+        void DiskInfoButton_TouchUpInside (object sender, EventArgs e)
+        {
+            var freeInner = Mvx.Resolve<IDiskInfoPlugin> ().GetFreeSpace (DeviceType.Inner, MemorySizeType.GBytes);
+            var totalInner = Mvx.Resolve<IDiskInfoPlugin> ().GetTotalSpace (DeviceType.Inner, MemorySizeType.GBytes);
+            UIAlertView alert = new UIAlertView (
+                "Disk info", 
+                $"Free space: {freeInner} GB\nTotal space: {totalInner} GB", 
+                null, 
+                "Ok", 
+                null
+            );
+            alert.Show ();
         }
 
         public override void DidReceiveMemoryWarning()

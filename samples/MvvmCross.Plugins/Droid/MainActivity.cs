@@ -5,44 +5,46 @@ using MvvmCross.Platform;
 using MvvmCross.Droid.Views;
 using g0rdan.MvvmCross.Plugin.SimpleEmail;
 using g0rdan.MvvmCross.Plugin.DiskInfo;
+using System;
 
 namespace g0rdan.MvvmCross.Plugins.Droid
 {
     [Activity (Label = "MvvmCross.Plugins", MainLauncher = true, Icon = "@mipmap/icon")]
     public class MainActivity : MvxActivity
     {
-        int count = 1;
-
         protected override void OnCreate (Bundle savedInstanceState)
         {
             base.OnCreate (savedInstanceState);
 
-            // Set our view from the "main" layout resource
             SetContentView (Resource.Layout.Main);
 
-            // Get our button from the layout resource,
-            // and attach an event to it
-            Button button = FindViewById<Button> (Resource.Id.myButton);
-
-            button.Click += (sender, e) => {
-
-                var totalInnerSpace = Mvx.Resolve<IDiskInfoPlugin> ().GetTotalSpace ();
-                var freeInnerSpace = Mvx.Resolve<IDiskInfoPlugin> ().GetFreeSpace ();
-
-                var totalSDSpace = Mvx.Resolve<IDiskInfoPlugin> ().GetTotalSpace (DeviceType.SD);
-                var freeSDSpace = Mvx.Resolve<IDiskInfoPlugin> ().GetFreeSpace (DeviceType.SD);
-
-
-//                var simpleEmailPlugin = Mvx.Resolve<ISimpleEmailPlugin>();
-//                simpleEmailPlugin.Init(this);
-//                simpleEmailPlugin.SendEmail(
-//                    "gordin.dan@gmail.com",
-//                    "Subject",
-//                    "Message text"
-//                );
-            };
+            FindViewById<Button> (Resource.Id.send_email_button).Click += SendEmail_Click;
+            FindViewById<Button> (Resource.Id.disk_info_button).Click += DiskInfo_Click;
         }
-    }
+
+        void SendEmail_Click (object sender, EventArgs e)
+        {
+            var simpleEmailPlugin = Mvx.Resolve<ISimpleEmailPlugin> ();
+            simpleEmailPlugin.Init (this);
+            simpleEmailPlugin.SendEmail (
+                "gordin.dan@gmail.com",
+                "Subject",
+                "Message text"
+            );
+        }
+
+        void DiskInfo_Click (object sender, EventArgs e)
+        {
+            var totalInnerSpace = Mvx.Resolve<IDiskInfoPlugin> ().GetTotalSpace (mSizeType: MemorySizeType.MBytes);
+            var freeInnerSpace = Mvx.Resolve<IDiskInfoPlugin> ().GetFreeSpace (mSizeType: MemorySizeType.MBytes);
+
+            var alert = new AlertDialog.Builder (this)
+               .SetTitle("Disk info")
+               .SetMessage($"Free space: {freeInnerSpace} MB\nTotal space: {totalInnerSpace} MB");
+
+            alert.Show ();
+        }
+   }
 }
 
 
