@@ -35,8 +35,8 @@ namespace g0rdan.MvvmCross.Plugin.DiskInfo.Droid
         private void GetSizes(string path)
         {
             StatFs stat = new StatFs (path);
-            _freeSpace = stat.BlockSizeLong;
-            _totalSpace = stat.AvailableBlocksLong;
+            _freeSpace = stat.AvailableBytes;
+            _totalSpace = stat.TotalBytes;
         }
 
         private decimal ConvertTo (long bytes, MemorySizeType mSizeType, int digits)
