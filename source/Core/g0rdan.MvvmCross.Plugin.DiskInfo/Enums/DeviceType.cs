@@ -2,7 +2,7 @@
 
 namespace g0rdan.MvvmCross.Plugin.DiskInfo
 {
-    public enum DeviceType
+    public enum StorageType
     {
         Inner,
         SD

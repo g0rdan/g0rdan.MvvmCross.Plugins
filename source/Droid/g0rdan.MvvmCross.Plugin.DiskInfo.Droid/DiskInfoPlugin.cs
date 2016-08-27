@@ -10,9 +10,9 @@ namespace g0rdan.MvvmCross.Plugin.DiskInfo.Droid
         long _freeSpace;
         long _totalSpace;
 
-        public decimal GetFreeSpace (DeviceType deviceType = DeviceType.Inner, MemorySizeType mSizeType = MemorySizeType.Bytes, int digits = 2)
+        public decimal GetFreeSpace (StorageType storageType = StorageType.Inner, MemorySizeType mSizeType = MemorySizeType.Bytes, int digits = 2)
         {
-            string path = deviceType == DeviceType.Inner ? 
+            string path = storageType == StorageType.Inner ? 
                 Android.OS.Environment.DataDirectory.Path : 
                 Android.OS.Environment.ExternalStorageDirectory.Path;
             
@@ -21,9 +21,9 @@ namespace g0rdan.MvvmCross.Plugin.DiskInfo.Droid
             return ConvertTo (_freeSpace, mSizeType, digits);
         }
 
-        public decimal GetTotalSpace (DeviceType deviceType = DeviceType.Inner, MemorySizeType mSizeType = MemorySizeType.Bytes, int digits = 2)
+        public decimal GetTotalSpace (StorageType storageType = StorageType.Inner, MemorySizeType mSizeType = MemorySizeType.Bytes, int digits = 2)
         {
-            string path = deviceType == DeviceType.Inner ? 
+            string path = storageType == StorageType.Inner ? 
                 Android.OS.Environment.DataDirectory.Path : 
                 Android.OS.Environment.ExternalStorageDirectory.Path;
 

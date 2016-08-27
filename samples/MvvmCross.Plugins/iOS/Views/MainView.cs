@@ -36,8 +36,8 @@ namespace g0rdan.MvvmCross.Plugins.iOS
 
         void DiskInfoButton_TouchUpInside (object sender, EventArgs e)
         {
-            var freeInner = Mvx.Resolve<IDiskInfoPlugin> ().GetFreeSpace (DeviceType.Inner, MemorySizeType.GBytes);
-            var totalInner = Mvx.Resolve<IDiskInfoPlugin> ().GetTotalSpace (DeviceType.Inner, MemorySizeType.GBytes);
+            var freeInner = Mvx.Resolve<IDiskInfoPlugin> ().GetFreeSpace (StorageType.Inner, MemorySizeType.GBytes);
+            var totalInner = Mvx.Resolve<IDiskInfoPlugin> ().GetTotalSpace (StorageType.Inner, MemorySizeType.GBytes);
             UIAlertView alert = new UIAlertView (
                 "Disk info", 
                 $"Free space: {freeInner} GB\nTotal space: {totalInner} GB", 
