@@ -15,7 +15,7 @@
     <copyright>Copyright 2016</copyright>
     <tags>MvvmCross Xamarin Email iOS</tags>
     <dependencies>
-      <dependency id="MvvmCross" version="4.2.1" />
+      <dependency id="MvvmCross" version="4.2.3" />
       <dependency id="g0rdan.MvvmCross.Plugin.SimpleEmail" version="1.0.2" />
     </dependencies>
   </metadata>

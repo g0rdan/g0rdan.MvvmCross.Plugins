@@ -16,7 +16,7 @@
     <tags>MvvmCross Mvvm</tags>
     <dependencies>
       <dependency id="g0rdan.MvvmCross.Plugin.DiskInfo" version="1.0.8" />
-      <dependency id="MvvmCross" version="4.2.1" />
+      <dependency id="MvvmCross" version="4.2.3" />
     </dependencies>
   </metadata>
 </package>

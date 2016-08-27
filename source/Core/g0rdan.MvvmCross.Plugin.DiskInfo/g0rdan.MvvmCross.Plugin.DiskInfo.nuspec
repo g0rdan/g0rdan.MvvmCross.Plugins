@@ -15,7 +15,7 @@
     <copyright>Denis Gordin 2016</copyright>
     <tags>MvvmCross Mvvm DiskInfo</tags>
     <dependencies>
-      <dependency id="MvvmCross" version="4.2.1" />
+      <dependency id="MvvmCross" version="4.2.3" />
     </dependencies>
   </metadata>
 </package>
